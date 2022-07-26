@@ -85,9 +85,10 @@ def parse(url = 'https://inlnk.ru/jElywR', simple_parsing=False, is_unique = Tru
         else:
             break
 
-parse(simple_parsing=False, is_unique=True)    # парсинг с постобработкой, только уникальные животные (без повторов)
-# parse(simple_parsing=False, is_unique=False) # парсинг с постобработкой, возможны повторы
-# parse(simple_parsing=True)                   # простой парсинг без постобработки, просто названия всех страниц с животными
+if __name__ == '__main__':
+    parse(simple_parsing=False, is_unique=True)    # парсинг с постобработкой, только уникальные животные (без повторов)
+    # parse(simple_parsing=False, is_unique=False) # парсинг с постобработкой, возможны повторы
+    # parse(simple_parsing=True)                   # простой парсинг без постобработки, просто названия всех страниц с животными
 
-for key,value in alpha_dict.items():
-    print(f'{key}: {value}')
+    for key,value in alpha_dict.items():
+        print(f'{key}: {value}')
