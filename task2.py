@@ -3,7 +3,7 @@ from lxml import html
 import pymorphy2
 import logging
 import time
-
+###
 url = 'https://inlnk.ru/jElywR'
 headers = {'user-agent' : 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0'}
 pattern = 'https://ru.wikipedia.org'
